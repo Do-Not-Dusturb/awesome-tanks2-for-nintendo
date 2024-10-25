@@ -3961,10 +3961,6 @@ Math.sign || (Math.sign = function(t) {
                         e = "Canvas",
                         o = "HTML Audio",
                         s = 1;
-                    if (this.renderType === i.WEBGL ? (e = "WebGL", s++) : this.renderType === i.HEADLESS && (e = "Headless"), this.device.webAudio && (o = "WebAudio", s++), this.device.chrome) {
-                        for (var n = ["%c %c %c Phaser v" + t + " | Pixi.js | " + e + " | " + o + "  %c %c %c http://phaser.io %c♥%c♥%c♥", "background: #fb8cb3", "background: #d44a52", "color: #ffffff; background: #871905;", "background: #d44a52", "background: #fb8cb3", "background: #ffffff"], r = 0; r < 3; r++) r < s ? n.push("color: #ff2424; background: #fff") : n.push("color: #959595; background: #fff");
-                        console.log.apply(console, n)
-                    } else window.console && console.log("Phaser v" + t + " | Pixi.js " + PIXI.VERSION + " | " + e + " | " + o + " | http://phaser.io")
                 }
             },
             setUpRenderer: function() {
